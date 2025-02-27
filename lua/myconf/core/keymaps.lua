@@ -1,6 +1,5 @@
 local key = vim.keymap -- For cleaner code
 
-
 -- for future use 
 local ignored_filetypes = {
 }

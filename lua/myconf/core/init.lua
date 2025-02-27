@@ -1,3 +1,4 @@
+require("myconf.core.globals")
 require("myconf.core.keymaps")
 require("myconf.core.options")
 require("myconf.core.commands")

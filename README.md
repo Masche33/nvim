@@ -24,6 +24,17 @@ Passing a number it sets the new maximum windows in nvim. If left blank it sets 
 
 ## Remapping guide:
 
+The new key association:
+
+- Ctrl+a: Select all
+- Ctrl+c: Closes the current windows
+- ' q': Forces the closing of a page
+- ' wq': Saves and exits
+- Y: Copies into clipboard
+- Ctrl+t: Open a terminal in the current window
+- Ctrl+h,j,k,l: Moves between the windows, and if the movement goes trough a wall it creates a new window if the maximum was not already reached.
+- 
+
 ## Options:
 
 The custom settings are:
