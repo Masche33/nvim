@@ -26,6 +26,16 @@ Passing a number it sets the new maximum windows in nvim. If left blank it sets 
 
 ## Options:
 
+The custom settings are:
+
+- 2 space tab
+- Relative number
+- number(The number are setted to be at 4 digit)
+
+## Globals:
+
+Is used to store global variable in a single position and avoid dispersion.
+
 ## Plugins:
 
-
+In this configuration for the moment there are not plugin

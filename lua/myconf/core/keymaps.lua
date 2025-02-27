@@ -1,4 +1,3 @@
-
 local key = vim.keymap -- For cleaner code
 
 
