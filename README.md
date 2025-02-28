@@ -37,6 +37,11 @@ The new key association:
 - Y: Copies into clipboard
 - Ctrl+t: Open a terminal in the current window
 - Ctrl+h,j,k,l: Moves between the windows, and if the movement goes trough a wall it creates a new window if the maximum was not already reached.
+- Alt+u,i: Moves down/up a line in normal mode
+- Ctrl+Alt+u,i: Moves down/up a line in visual mode
+
+
+
 
 ## Options:
 

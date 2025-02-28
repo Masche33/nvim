@@ -9,6 +9,12 @@ local ignored_buftypes = {
   "terminal"
 }
 
+-- move lines
+key.set("n", "<M-u>", ":m .+1<CR>==", { desc = "Move line down" })
+key.set("n", "<M-i>", ":m .-2<CR>==", { desc = "Move line up" })
+key.set("v", "<C-M-u>", ":m '>+1<CR>gv=gv", { desc = "Move slection down" })
+key.set("v", "<C-M-i>", ":m '<-2<CR>gv=gv", { desc = "Move slection up" })
+
 
 -- Select all
 key.set("n", "<C-a>", "ggVG$", { desc = "Select all the file"})
