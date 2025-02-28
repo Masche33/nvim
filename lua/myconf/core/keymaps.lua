@@ -108,3 +108,5 @@ key.set("n", "<C-l>", function()
    navigate_or_create_split("l")
 end, { noremap = true, silent = true, desc = "Move to right split or create one" })
 key.set("n", "<C-c>", "<C-w>c")
+
+
