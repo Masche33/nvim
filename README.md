@@ -57,4 +57,6 @@ Is used to store global variable in a single position and avoid dispersion.
 
 ## Plugins:
 
-In this configuration for the moment there are not plugin
+- Lazy.nvim: to manage packages
+- TreeSitter: Dependecies of lazy.nvim
+- nvim tree: To have and resource explorer in nvim
