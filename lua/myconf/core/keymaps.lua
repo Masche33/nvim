@@ -26,6 +26,34 @@ key.set({ "n", "v" }, "Y", '"+y', { desc = "Copies into clipboard the select tex
 key.set("n", "<C-t>", ":term<CR>", {desc = "Opens a terminal"})
 key.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
 
+-- disable arrow keys and mouse
+key.set("n", "<ScrollWheelUp>", "")
+key.set("n", "<S-ScrollWheelUp>", "")
+key.set("n", "<C-ScrollWheelUp>", "")
+key.set("n", "<ScrollWheelDown>", "")
+key.set("n", "<S-ScrollWheelDown>", "")
+key.set("n", "<C-ScrollWheelDown>", "")
+key.set("n", "<ScrollWheelLeft>", "")
+key.set("n", "<S-ScrollWheelLeft>", "")
+key.set("n", "<C-ScrollWheelLeft>", "")
+key.set("n", "<ScrollWheelRight>", "")
+key.set("n", "<S-ScrollWheelRight>", "")
+key.set("n", "<C-ScrollWheelRight>", "")
+vim.opt.mouse = ""
+key.set("n", "<Up>", "")
+key.set("n", "<Down>", "")
+key.set("n", "<Left>", "")
+key.set("n", "<Right>", "")
+key.set("v", "<Up>", "")
+key.set("v", "<Down>", "")
+key.set("v", "<Left>", "")
+key.set("v", "<Right>", "")
+key.set("i", "<Up>", "")
+key.set("i", "<Down>", "")
+key.set("i", "<Left>", "")
+key.set("i", "<Right>", "")
+
+
 -- Function to handle split navigation and creation
 local function navigate_or_create_split(direction)
    local current_win = vim.api.nvim_get_current_win()

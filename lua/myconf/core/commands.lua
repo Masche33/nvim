@@ -21,3 +21,9 @@ vim.api.nvim_create_user_command('SM', function(opts)
     print("Invalid number, please give a valid number")
   end
 end, { nargs = "?" })
+
+-- 'RF' reloads the conf files
+vim.api.nvim_create_user_command('RF', function()
+  vim.cmd('luafile $MYVIMRC')
+  vim.notify('Configuration reloaded')
+end, {})

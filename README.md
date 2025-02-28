@@ -22,6 +22,10 @@ Copies the absolute path of the current file.
 
 Passing a number it sets the new maximum windows in nvim. If left blank it sets it to default (vim.g.max_windows). 
 
+### RF: 
+
+Reloads the confinguration.
+
 ## Remapping guide:
 
 The new key association:
