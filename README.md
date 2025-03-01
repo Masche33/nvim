@@ -34,6 +34,7 @@ The new key association:
 - Ctrl+c: Closes the current windows
 - ' q': Forces the closing of a page
 - ' wq': Saves and exits
+- ' n': Closes the file but not the window
 - Y: Copies into clipboard
 - Ctrl+t: Open a terminal in the current window
 - Ctrl+h,j,k,l: Moves between the windows, and if the movement goes trough a wall it creates a new window if the maximum was not already reached.

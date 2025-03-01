@@ -60,6 +60,9 @@ key.set("i", "<Down>", "")
 key.set("i", "<Left>", "")
 key.set("i", "<Right>", "")
 
+-- Open new file
+key.set("n", "<leader>n", ":enew<CR>", {desc = "Opens a void file"})
+key.set("v", "<leader>n", ":enew<CR>", {desc = "Opens a void file"})
 
 -- Function to handle split navigation and creation
 local function navigate_or_create_split(direction)
