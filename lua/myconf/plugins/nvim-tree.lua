@@ -33,7 +33,7 @@ return {
          key.set("n", "<S-CR>", api.tree.change_root_to_node, opts("CD"))
          key.set("n", "<S-BS>", api.tree.change_root_to_parent, opts("Up"))
          key.set("n", "h", api.node.navigate.parent_close, opts("Close Directory"))
-         key.set("n", "l", api.node.open.edit, opts("Open"))
+         --key.set("n", "l", api.node.open.edit, opts("Open"))
          key.set("n", "o", api.node.run.system, opts("Open with default app"))
          key.set("n", "O", reveal_in_finder, opts("Reveal in Finder"))
       end
@@ -113,7 +113,6 @@ return {
       -- set keymaps
       key.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
       key.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus file explorer" }) -- toggle file explorer on current file
-      -- key.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
       key.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
       key.set("n", "<leader>et", "<cmd>NvimTreeFindFile<CR>", { desc = "Find file in file explorer" })
    end,
