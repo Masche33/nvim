@@ -10,6 +10,9 @@ local ignored_buftypes = {
   "terminal"
 }
 
+-- Lazy
+key.set("n", "<leader>l", ":Lazy<cr>", {desc="Apre Lazy"})
+
 -- move lines
 key.set("n", "<M-u>", ":m .+1<CR>==", { desc = "Move line down" })
 key.set("n", "<M-i>", ":m .-2<CR>==", { desc = "Move line up" })
