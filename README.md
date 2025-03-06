@@ -32,15 +32,15 @@ The new key association:
 
 - Ctrl+a: Select all
 - Ctrl+c: Closes the current windows
-- ' q': Forces the closing of a page
-- ' wq': Saves and exits
-- ' n': Closes the file but not the window
 - Y: Copies into clipboard
 - Ctrl+t: Open a terminal in the current window
 - Ctrl+h,j,k,l: Moves between the windows, and if the movement goes trough a wall it creates a new window if the maximum was not already reached.
 - Alt+u,i: Moves down/up a line in normal mode
 - Ctrl+Alt+u,i: Moves down/up a line in visual mode
 
+- ' n': Closes the file but not the window
+- ' wq': Saves and exits
+- ' q': Forces the closing of a page
 
 
 
