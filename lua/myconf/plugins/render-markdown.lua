@@ -1,14 +1,19 @@
 -- render-markdown.nvim.lua
 return {
     'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = {
-    'echasnovski/mini.icons',
+    dependencies = { 
+      'nvim-treesitter/nvim-treesitter', 
+      'echasnovski/mini.nvim', 
     },
+
+
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
-  opts = {
-        enable_auto_render = true,  
-        enable_highlighting = true, 
-    },
+  config = function()
+    require('render-markdown').setup({
+      
+    })
+  end,
+
 }
 
