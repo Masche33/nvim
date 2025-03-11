@@ -5,3 +5,6 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit -D -t /usr/local/bin/
 rm -fr ./lazygit.tar.gz
 rm -fr ./lazygit
+
+sudo apt install npm
+sudo npm install -g tree-sitter-cli
