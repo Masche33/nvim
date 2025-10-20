@@ -4,7 +4,7 @@ return {
 
    config = function()
       local transparent = false -- set to true if you would like to enable transparency
-      local black1 = "#10100F" -- "#10100D"
+      local black1 = "#000000"   -- "#10100F" -- "#10100D"
       local bg_high = "#1D1D19"
       local white = "#EFECDB"
       local grey1 = "#8D8C78"
