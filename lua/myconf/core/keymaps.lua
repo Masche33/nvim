@@ -28,6 +28,7 @@ key.set("i", "<C-a>", "<ESC>ggVG$", { desc = "Select all the file"})
 key.set("n", "<C-c>", ":q<CR>", {desc ="Closes the window"})
 key.set("n", "<leader>q", ":q!<CR>", {desc ="Forces the closing of the window"})
 key.set("n", "<leader>wq", ":wq<CR>", {desc ="Saves and closes"})
+key.set("n", "<leader>w", ":w<CR>", {desc ="Saves"})
 
 -- Copy into clipboard
 key.set({ "n", "v" }, "Y", '"+y', { desc = "Copies into clipboard the select text" })
