@@ -4,6 +4,9 @@ local key = vim.keymap
 -- Open the terminal
 key.set("n", "<C-t>", ":term<CR>", {desc = "Opens a terminal"})
 
+-- Copy into clipboard
+key.set({ "n", "v" }, "Y", '"+y', { desc = "Copies into clipboard the select text" })
+
 
 --Closing windows
 key.set("n", "<C-c>", ":q<CR>", {desc="Closes the windows"})
