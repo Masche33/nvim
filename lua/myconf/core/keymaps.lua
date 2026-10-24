@@ -25,13 +25,14 @@ local split_map = {
 
 local ignored_filetypes = {
    "NvimTree",
+   "undotree"
 }
 
 local ignored_buftypes = {
+
 }
 
 local function move_or_split(direction)
-    vim.api.nvim_echo({{"Function called"}}, false, {})
     local curr_win = vim.api.nvim_get_current_win()
     local curr_buf = vim.api.nvim_get_current_buf()
 
