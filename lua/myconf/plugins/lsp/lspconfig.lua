@@ -19,17 +19,23 @@ return {
          callback = function(ev)
             local opts = { buffer = ev.buf, silent = true }
 
+            opts.desc = "Show documentation for what is under cursor"
             vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+            opts.desc = "Smart rename"
             vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts)
+            opts.desc = "See available code actions"
             vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, opts)
+            opts.desc = "Go to previous diagnostic"
             vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+            opts.desc = "Go to next diagnostic"
             vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+            opts.desc = "Show line diagnostic"
             vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, opts)
          end,
       })
 
       local diagnostic_signs = {
-         [vim.diagnostic.severity.ERROR] = "✖ ",
+         [vim.diagnostic.severity.ERROR] = "✖",
          [vim.diagnostic.severity.WARN] = "󱈸",
          [vim.diagnostic.severity.HINT] = "󱐋",
          [vim.diagnostic.severity.INFO] = "",
@@ -41,23 +47,22 @@ return {
          root_markers = { "Cargo.toml", "rust-project.json", ".git" },
          settings = {
             ["rust-analyzer"] = {
-               check = { command = "clippy" },
+               check = {
+                   command = "clippy",
+               },
                cargo = { allFeatures = true },
                procMacro = { enable = true },
                completions = {
                   addUseImports = true,
                   postfix = { enable = true },
                },
+               diagnostics = {
+                   disabled = {"unlinked-file"},
+               },
             },
          },
       })
 
-      vim.lsp.config("typst_lsp", {
-         capabilities = capabilities,
-         settings = {
-            exportPdf = "onSave",
-         },
-      })
 
       vim.diagnostic.config({
          virtual_text = true,
