@@ -18,7 +18,7 @@ return {
          automatic_enable = true,
          ensure_installed = {
             "rust_analyzer",
-            "typst_lsp",
+            "stylua",
          },
       })
 
